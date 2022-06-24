@@ -1,0 +1,49 @@
+{
+  "name": "disney-api",
+  "version": "1.0.0",
+  "description": "challenge-alkemy",
+  "main": "./src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start":"node .",
+    "dev":"nodemon --legacy-watch --ignore './public/*' -r dotenv/config .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:mocha":"mocha --reporter spec > ./tests/unit/report.html './tests/unit/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germanWalton/challengeAlkemy.git"
+  },
+  "author": "German Walton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/germanWalton/challengeAlkemy/issues"
+  },
+  "homepage": "https://github.com/germanWalton/challengeAlkemy#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.18",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.5.2",
+    "moment": "^2.29.3",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.5",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.21.0",
+    "swagger-ui-express": "^4.4.0"
+  }
+}
