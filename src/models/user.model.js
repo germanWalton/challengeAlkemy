@@ -58,7 +58,9 @@ class Usuario {
     return users;
   }
   async getById(userId) {
-    return await this.model.findOne({ where: { id: userId } });
+    // return await this.model.findOne({ where: { id: userId } });
+    return await this.model.findByPk(userId);
+
   }
   async getByEmail(email) {
     const userByEmail = await this.model.findOne({ where: { email: email } });

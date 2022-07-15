@@ -4,8 +4,8 @@ const characterModel = require("../models/character.model");
 
 
 
-const getAll = async () => {
-  return await characterModel.getAll()
+const getAll = async (query) => {
+  return await characterModel.getAll(query)
 };
 
 const getById = async (id) => {

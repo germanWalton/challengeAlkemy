@@ -1,8 +1,8 @@
 
 const moviesModel = require("../models/movie.model");
 
-const getAll = async () => {
-  return await moviesModel.getAll()
+const getAll = async (query) => {
+  return await moviesModel.getAll(query)
 };
 
 const getById = async (id) => {

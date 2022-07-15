@@ -1,9 +1,10 @@
 const service = require("../services/characters.service");
 const logger = require("../log");
 
-const getAllCharacters= async (req, res) => {
+const getAllCharacters = async (req, res) => {
+  
   try {
-    return res.send(await service.getAll());
+    return res.send(await service.getAll(req.query));
   } catch (e) {
     return res.status(500).send({ Error: e.message });
   }

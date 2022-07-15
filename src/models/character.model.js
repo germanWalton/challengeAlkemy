@@ -1,7 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/sequelize");
 
-
 class Character {
   constructor() {
     this.model = sequelize.define(
@@ -60,12 +59,21 @@ class Character {
     const newCharacter = await this.model.create(character);
     return newCharacter.dataValues;
   }
-  async getAll() {
-    const characters = await this.model.findAll();
-    return characters;
+  async getAll(query) {
+    return await this.model.findAll({
+      where: query,
+      attributes:['image','name']
+    });
   }
   async getById(characterId) {
-    return await this.model.findOne({ where: { id: characterId } });
+    // return await this.model.findOne({ where: { id: characterId } });
+    return await this.model.findByPk(characterId, {
+      include: {
+        model: require("./movie.model").model ,
+        as: 'movies'
+      }
+    });
+
   }
 
   async update(characterId, data) {

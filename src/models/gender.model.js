@@ -1,10 +1,10 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/sequelize");
 
-class Genre {
+class Gender {
   constructor() {
     this.model = sequelize.define(
-      "Genre",
+      "GenderType",
       {
         name: {
           type: DataTypes.STRING(50),
@@ -28,19 +28,21 @@ class Genre {
 
   }
 
-  async create(genre) {
-    const newGenre = await this.model.create(genre);
-    return newGenre.dataValues;
+  async create(gender) {
+    const newGender = await this.model.create(gender);
+    return newGender.dataValues;
   }
   async getAll() {
-    const genres = await this.model.findAll();
-    return genres;
+    const genders = await this.model.findAll();
+    return genders;
   }
-  async getById(genreId) {
-    return await this.model.findOne({ where: { id: genreId } });
+  async getById(genderId) {
+    // return await this.model.findOne({ where: { id: genderId } });
+    return await this.model.findByPk(genderId)
+
   }
 
-  async update(genreId, data) {
+  async update(genderId, data) {
     const { name, image } = data;
     return await this.model.update(
       {
@@ -49,23 +51,23 @@ class Genre {
       },
       {
         where: {
-          id: genreId,
+          id: genderId,
         },
       }
     );
   }
-  async delete(genreId) {
-    return await this.model.destroy({ where: { id: genreId } });
+  async delete(genderId) {
+    return await this.model.destroy({ where: { id: genderId } });
   }
 }
 
 
-const genre = new Genre()
+const gender = new Gender()
 
-module.exports = genre
+module.exports = gender
 
-   genre.model.hasMany(require("./movie.model").model, {
-     foreignKey: "genreTypeId",
+   gender.model.hasMany(require("./movie.model").model, {
+     foreignKey: "genderTypeId",
      sourceKey: "id"
   
    })

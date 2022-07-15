@@ -1,5 +1,4 @@
 const { DataTypes } = require("sequelize");
-
 const sequelize = require("../config/sequelize");
 
 class Movie {
@@ -50,12 +49,19 @@ class Movie {
     const newMovie = await this.model.create(movie);
     return newMovie.dataValues;
   }
-  async getAll() {
+  async getAll(query) {
     const movies = await this.model.findAll();
     return movies;
   }
   async getById(movieId) {
-    return await this.model.findOne({ where: { id: movieId } });
+    // return await this.model.findOne({ where: { id: movieId } });
+    return await this.model.findByPk(movieId, {
+      include: {
+        model:require("./character.model").model ,
+        as:'characters'
+      }
+    });
+
   }
 
   async update(movieId, data) {
@@ -88,7 +94,7 @@ movie.model.belongsToMany(require("./character.model").model, {
   as: "characters",
   foreignKey: "movieId",
 }),
- movie.model.belongsTo(require("./genre.model").model, {
-    foreignKey: "genreTypeId",
+ movie.model.belongsTo(require("./gender.model").model, {
+    foreignKey: "genderTypeId",
     targetKey: "id",
   });

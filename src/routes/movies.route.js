@@ -12,7 +12,7 @@ router.get("/:id", controller.getMovieById);
 
 router.post("/", controller.createMovie);
 
-router.post("/:id", controller.updateMovie);
+router.put("/:id", controller.updateMovie);
 
 router.delete("/:id", controller.deleteMovie);
 
