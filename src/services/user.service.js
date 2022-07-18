@@ -1,4 +1,6 @@
-const userModel = require("../models/user.model");
+const ModelFactory = require('../models/factory.model');
+const userModel = ModelFactory.getModel('user')
+
 
 const getAll = async () => {
   return await userModel.getAll();

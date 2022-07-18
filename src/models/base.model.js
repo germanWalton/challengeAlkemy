@@ -1,19 +1,16 @@
-const mongoose = require("mongoose");
-const { DataTypes } = require("sequelize");
 const sequelize = require("../config/sequelize");
 
 class BaseModel {
-  constructor(modelName,dataTypes) {
-    this.model = sequelize.define(modelName,dataTypes);
+  constructor(modelName, schema) {
+    this.model = sequelize.define(modelName, schema);
   }
 
   async getAll() {
-    return await this.model.findAll()
+    return await this.model.findAll();
   }
- 
 
   async getById(id) {
-    return await this.model.findByPk(id)
+    return await this.model.findByPk(id);
   }
 
   async deleteById(id) {
@@ -21,20 +18,16 @@ class BaseModel {
   }
 
   async update(id, data) {
-    return await this.model.update(
-      {
-        data
-      },
-      {
-        where: {
-          id: id,
-        },
+    return await this.model.update(data, {
+      where: {
+        id
       }
-    );
+    });
   }
 
   async save(obj) {
-    return await this.model.create(obj);
+    const data = await this.model.create(obj);
+    return data.dataValues;
   }
 }
 

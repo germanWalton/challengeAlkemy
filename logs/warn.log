@@ -40,3 +40,11 @@
 [2022-07-14T09:52:54.182] [WARN] warning - The route http://localhost:8080/ doesn't exist
 [2022-07-14T09:53:12.441] [WARN] warning - Request received GET
 [2022-07-14T09:53:12.442] [WARN] warning - The route http://localhost:8080/HNAP1/ doesn't exist
+[2022-07-15T10:01:37.754] [WARN] warning - Request received GET
+[2022-07-15T10:01:37.755] [WARN] warning - The route http://localhost:8080/ doesn't exist
+[2022-07-15T10:01:52.918] [WARN] warning - Request received GET
+[2022-07-15T10:01:52.918] [WARN] warning - The route http://localhost:8080/HNAP1/ doesn't exist
+[2022-07-16T19:36:51.133] [WARN] warning - Request received GET
+[2022-07-16T19:36:51.134] [WARN] warning - The route http://localhost:8080/ doesn't exist
+[2022-07-16T19:37:06.292] [WARN] warning - Request received GET
+[2022-07-16T19:37:06.293] [WARN] warning - The route http://localhost:8080/HNAP1/ doesn't exist

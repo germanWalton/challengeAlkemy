@@ -1,10 +1,11 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../config/sequelize");
+const BaseModel = require('../models/base.model');
 
-class Character {
+
+class Character extends BaseModel {
   constructor() {
-    this.model = sequelize.define(
-      "Character",
+    const schema = 
+      
       {
         image: {
           type: DataTypes.STRING(250),
@@ -45,57 +46,33 @@ class Character {
             notEmpty: true,
           },
         },
-      },
-      {},
+      }
       
 
  
-    )
- 
+    
+    super('Character',schema)
 
   }
 
-  async create(character) {
-    const newCharacter = await this.model.create(character);
-    return newCharacter.dataValues;
-  }
-  async getAll(query) {
-    return await this.model.findAll({
-      where: query,
-      attributes:['image','name']
-    });
-  }
-  async getById(characterId) {
-    // return await this.model.findOne({ where: { id: characterId } });
-    return await this.model.findByPk(characterId, {
-      include: {
-        model: require("./movie.model").model ,
-        as: 'movies'
-      }
-    });
 
-  }
+   async getAll(query) {
+     return await this.model.findAll({
+       where: query,
+       attributes:['image','name']
+     });
+   }
+   async getById(characterId) {
+     return await this.model.findByPk(characterId, {
+       include: {
+         model: require("./movie.model").model ,
+         as: 'movies'
+       }
+     });
 
-  async update(characterId, data) {
-    const { image, name, age, weight, history } = data;
-    return await this.model.update(
-      {
-        image,
-        name,
-        age,
-        weight,
-        history,
-      },
-      {
-        where: {
-          id: characterId,
-        },
-      }
-    );
-  }
-  async delete(characterId) {
-    return await this.model.destroy({ where: { id: characterId } });
-  }
+   }
+
+
 }
 const character = new Character();
 

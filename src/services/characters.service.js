@@ -1,6 +1,6 @@
+const ModelFactory = require('../models/factory.model');
+const characterModel = ModelFactory.getModel('character');
 
-
-const characterModel = require("../models/character.model");
 
 
 
@@ -13,7 +13,7 @@ const getById = async (id) => {
 };
 
 const save = async (character) => {
-  return await characterModel.create(character)
+  return await characterModel.save(character)
 };
 
 const update = async (characterId, data) => {

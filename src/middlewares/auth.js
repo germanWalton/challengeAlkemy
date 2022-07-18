@@ -5,7 +5,7 @@ const SECRET = config.jwt
 
 const generateToken = (user) => {
   return jwt.sign(user, SECRET, {
-    expiresIn: "180s",
+    expiresIn: "300s",
   });
 };
 
@@ -21,7 +21,7 @@ const verifyToken = (token) => {
 const authMiddleware = async (req, res, next) => {
   const header = req.headers.authorization;
   if (!header) {
-    return res.status(401).send({ error: "unauthorized" });
+    return res.status(401).send({ error: "Unauthorized" });
   }
 
   //Authorization: Bearer <token>
@@ -31,7 +31,7 @@ const authMiddleware = async (req, res, next) => {
   console.log(token);
   if (!payload) {
     return res.status(401).send({
-      error: "unauthorized",
+      error: "Unauthorized",
     });
   }
   return next();

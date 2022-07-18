@@ -1,6 +1,6 @@
 const userModel = require("./user.model");
-const moviesModel = require("./movie.model");
-const charactersModel = require("./character.model");
+const movieModel = require("./movie.model");
+const characterModel = require("./character.model");
 const genderModel = require("../models/gender.model");
 
 class ModelFactory {
@@ -8,10 +8,10 @@ class ModelFactory {
     switch (modelName) {
       case "user":
         return userModel;
-      case "movies":
-        return moviesModel;
-      case "characters":
-        return charactersModel;
+      case "movie":
+        return movieModel;
+      case "character":
+        return characterModel;
       case "gender":
         return genderModel;
       default:

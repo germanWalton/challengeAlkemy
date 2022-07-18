@@ -1,11 +1,10 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../config/sequelize");
+const BaseModel = require('../models/base.model');
 const bcrypt = require("bcrypt");
 
-class Usuario {
+class Usuario extends BaseModel {
   constructor() {
-    this.model = sequelize.define(
-      "Users",
+    const schema = 
       {
         password: {
           type: DataTypes.STRING(100),
@@ -43,9 +42,10 @@ class Usuario {
          type: DataTypes.ENUM({ values: ["ADMIN_ROLE", "USER_ROLE"] }),
          defaultValue: "USER_ROLE",
          }
-      },
-      {}
-    );
+    }
+      super("Users",schema)
+      
+    
   }
 
   async create(user) {
@@ -53,15 +53,8 @@ class Usuario {
     const newUser = await this.model.create(user);
     return newUser.dataValues;
   }
-  async getAll() {
-    const users = await this.model.findAll();
-    return users;
-  }
-  async getById(userId) {
-    // return await this.model.findOne({ where: { id: userId } });
-    return await this.model.findByPk(userId);
 
-  }
+
   async getByEmail(email) {
     const userByEmail = await this.model.findOne({ where: { email: email } });
     return userByEmail.dataValues;
@@ -76,26 +69,8 @@ class Usuario {
     const user = await this.model.findOne({ where: { email: email } });
     return await bcrypt.compare(password, user.password);
   }
-  async update(userId, data) {
-    const { password, name, email, enable } = data;
-    return await this.model.update(
-      {
-        // username,
-        password,
-        name,
-        email,
-        enable,
-      },
-      {
-        where: {
-          id: userId,
-        },
-      }
-    );
-  }
-  async delete(userId) {
-    return await this.model.destroy({ where: { id: userId } });
-  }
+
+
 }
 
 module.exports = new Usuario();
