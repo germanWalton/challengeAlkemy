@@ -28,12 +28,12 @@ class Movie extends BaseModel {
         },
       },
       score: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
         allowNull: false,
         validate: {
           notEmpty: true,
-          isInt: true,
-          is: /^[1-5]+$/,
+          // isInt: true,
+          // is: /^[1-5]+$/,
         },
       },
     };
@@ -41,14 +41,14 @@ class Movie extends BaseModel {
   }
 
   async getAll(query) {
-    const { title, genderTypeId, order } = query;
+    const { title, genderId, order } = query;
     let queryToFind = {};
     let titleOrder = [];
     if (title) {
       queryToFind.title = title;
     }
-    if (genderTypeId) {
-      queryToFind.genderTypeId = genderTypeId;
+    if (genderId) {
+      queryToFind.genderId = genderId;
     }
     if (order) {
       if (query.order === "ASC") {
@@ -65,14 +65,17 @@ class Movie extends BaseModel {
   }
   async getById(movieId) {
     return await this.model.findByPk(movieId, {
-      include: {
+      include: [{
         model: require("./character.model").model,
-        as: "characters",
-      },
+        as: "characters"
+      },'gender'],
     });
   }
-  async save(obj) {
-    const data = await this.model.create(obj,{include:[require("./gender.model").model]});
+  async create(obj) {
+    const data = await this.model.create(obj, {
+      include: [require("./gender.model").model],
+      as:"gender"
+    });
     return data.dataValues;
   }
 }
@@ -88,5 +91,5 @@ movie.model.belongsToMany(require("./character.model").model, {
   movie.model.belongsTo(require("./gender.model").model, {
     foreignKey: "genderId",
     targetKey: "id",
-    as: "gender",
+    as:'gender'
   });

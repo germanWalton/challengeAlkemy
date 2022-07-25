@@ -1,7 +1,7 @@
 const service = require("../services/movies.service");
 const logger = require("../log");
 
-const getAllMovies= async (req, res) => {
+const getAllMovies = async (req, res) => {
   try {
     return res.send(await service.getAll(req.query));
   } catch (e) {
@@ -9,7 +9,7 @@ const getAllMovies= async (req, res) => {
   }
 };
 
-const getMovieById= async (req, res) => {
+const getMovieById = async (req, res) => {
   const { id } = req.params;
   try {
     const movie = await service.getById(id);
@@ -48,16 +48,34 @@ const updateMovie = async (req, res) => {
 
 const deleteMovie = async (req, res) => {
   try {
-    const movie = await service.getById(req.params.id)
+    const movie = await service.getById(req.params.id);
     if (!movie) {
-      return res.status(404).send({Error:"Movie not found"})
+      return res.status(404).send({ Error: "Movie not found" });
     }
     await service.deleteMovie(req.params.id);
-      return res.sendStatus(200)
+    return res.sendStatus(200);
   } catch (e) {
     logger.error(e);
     return res.status(500).send({ Error: e.message });
   }
 };
 
-module.exports = {getAllMovies,getMovieById,createMovie,updateMovie,deleteMovie};
+const associateCharacter = async (req, res) => {
+  try {
+     const { movieId, characterId } = req.params;
+
+    await service.associate(movieId,characterId);
+    return res.sendStatus(200);
+  } catch (e) {
+    logger.error(e);
+    return res.status(500).send({ Error: e.message });
+  }
+};
+module.exports = {
+  getAllMovies,
+  getMovieById,
+  createMovie,
+  updateMovie,
+  deleteMovie,
+  associateCharacter,
+};

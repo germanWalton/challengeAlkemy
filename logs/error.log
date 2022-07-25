@@ -4882,3 +4882,532 @@ Validation error: Validation is on score failed
     at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
     at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
     at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:33:08.844] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:35:03.352] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:35:56.342] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:43:59.398] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:44:28.474] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:50:28.413] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T10:59:30.813] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:01:09.286] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:01:11.292] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:07:48.084] [ERROR] error - Error: Include unexpected. Element has to be either a Model, an Association or an object.
+    at Function._conformInclude (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:323:11)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:270:61
+    at Array.map (<anonymous>)
+    at Function._conformIncludes (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:270:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:104:24)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+    at Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:15:27)
+[2022-07-18T11:09:18.789] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:10:55.124] [ERROR] error - Error
+    at Query.run (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:311:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async MySQLQueryInterface.insert (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2432:35)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Movie.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:15:10)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19) {
+  name: 'SequelizeUniqueConstraintError',
+  errors: [
+    ValidationErrorItem {
+      message: 'title must be unique',
+      type: 'unique violation',
+      path: 'title',
+      value: 'Elvis',
+      origin: 'DB',
+      instance: [Movie],
+      validatorKey: 'not_unique',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  parent: Error: Duplicate entry 'Elvis' for key 'title'
+      at Packet.asError (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Execute.execute (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:390:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'Elvis' for key 'title'",
+    sql: 'INSERT INTO `Movies` (`id`,`image`,`title`,`creationDate`,`score`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'https://stasdsdtic.wikia.nocoosdsdkie.net/marvelcinematicuniverse',
+      'Elvis',
+      '2012-04-23 00:00:00',
+      4,
+      '2022-07-18 14:10:54',
+      '2022-07-18 14:10:54'
+    ]
+  },
+  original: Error: Duplicate entry 'Elvis' for key 'title'
+      at Packet.asError (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Execute.execute (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:390:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_DUP_ENTRY',
+    errno: 1062,
+    sqlState: '23000',
+    sqlMessage: "Duplicate entry 'Elvis' for key 'title'",
+    sql: 'INSERT INTO `Movies` (`id`,`image`,`title`,`creationDate`,`score`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'https://stasdsdtic.wikia.nocoosdsdkie.net/marvelcinematicuniverse',
+      'Elvis',
+      '2012-04-23 00:00:00',
+      4,
+      '2022-07-18 14:10:54',
+      '2022-07-18 14:10:54'
+    ]
+  },
+  fields: { title: 'Elvis' },
+  sql: 'INSERT INTO `Movies` (`id`,`image`,`title`,`creationDate`,`score`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);'
+}
+[2022-07-18T11:27:07.266] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:27:25.099] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:27:37.133] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:29:54.198] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:30:13.363] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:30:24.276] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T11:30:44.452] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T21:52:50.375] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T21:55:33.085] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T21:58:49.670] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: Gender is associated to Movie using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:576:13)
+    at Function._validateIncludedElement (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:502:53)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:417:39)
+    at new Model (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:107:26)
+    at new Movie (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\sequelize.js:219:19)
+    at Function.build (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1326:12)
+    at Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:23)
+    at Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:35)
+[2022-07-18T22:14:47.153] [ERROR] error - TypeError: Cannot read properties of null (reading 'id')
+    at Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19)
+[2022-07-18T22:18:57.957] [ERROR] error - Error: Gender does not exist
+    at Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:20:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19)
+[2022-07-18T23:37:21.476] [ERROR] error - ValidationError [SequelizeValidationError]: Validation error: Validation isInt on score failed,
+Validation error: Validation is on score failed
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:17:12)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Validation isInt on score failed',
+      type: 'Validation error',
+      path: 'score',
+      value: 4.8,
+      origin: 'FUNCTION',
+      instance: [Movie],
+      validatorKey: 'isInt',
+      validatorName: 'isInt',
+      validatorArgs: [Array],
+      original: [Error]
+    },
+    ValidationErrorItem {
+      message: 'Validation is on score failed',
+      type: 'Validation error',
+      path: 'score',
+      value: 4.8,
+      origin: 'FUNCTION',
+      instance: [Movie],
+      validatorKey: 'is',
+      validatorName: 'is',
+      validatorArgs: [Array],
+      original: [Error]
+    }
+  ]
+}
+[2022-07-18T23:38:58.654] [ERROR] error - Error: Gender does not exist
+    at Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:19:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19)
+[2022-07-18T23:39:04.876] [ERROR] error - ValidationError [SequelizeValidationError]: Validation error: Validation is on score failed
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:17:12)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Validation is on score failed',
+      type: 'Validation error',
+      path: 'score',
+      value: 4.8,
+      origin: 'FUNCTION',
+      instance: [Movie],
+      validatorKey: 'is',
+      validatorName: 'is',
+      validatorArgs: [Array],
+      original: [Error]
+    }
+  ]
+}
+[2022-07-18T23:42:01.635] [ERROR] error - ValidationError [SequelizeValidationError]: Validation error: Validation is on score failed
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Movie.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\movie.model.js:75:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:17:12)
+    at async createMovie (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:29:19) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Validation is on score failed',
+      type: 'Validation error',
+      path: 'score',
+      value: 4.8,
+      origin: 'FUNCTION',
+      instance: [Movie],
+      validatorKey: 'is',
+      validatorName: 'is',
+      validatorArgs: [Array],
+      original: [Error]
+    }
+  ]
+}
+[2022-07-19T23:23:57.324] [ERROR] error - TypeError: movie.addCharacter is not a function
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:66:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:27:58.454] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:68:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:30:35.512] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:68:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:32:27.242] [ERROR] error - TypeError: movie.addCharacter is not a function
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:34:22.623] [ERROR] error - TypeError: movieId.addCharacter is not a function
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:17)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:34:34.840] [ERROR] error - TypeError: movieId.addCharacterId is not a function
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:17)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:42:03.747] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:43:44.175] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:43:50.737] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:45:12.739] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'addCharacter')
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+[2022-07-19T23:45:43.182] [ERROR] error - TypeError: movie.addCharacter is not a function
+    at Object.associate (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\movies.service.js:33:15)
+    at associateCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\movies.controller.js:67:19)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\express\lib\router\index.js:376:14)

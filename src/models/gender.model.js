@@ -27,7 +27,9 @@ class Gender extends BaseModel {
  
 
   }
-
+  async findByName(name) {
+    return await this.model.findOne({ where: { name } })
+}
 
 }
 

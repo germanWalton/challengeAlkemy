@@ -56,10 +56,13 @@ class Character extends BaseModel {
   }
 
 
-   async getAll(query) {
+  async getAll(query) {
+ 
      return await this.model.findAll({
        where: query,
-       attributes:['image','name']
+       attributes: ['image', 'name'],
+       
+      
      });
    }
    async getById(characterId) {

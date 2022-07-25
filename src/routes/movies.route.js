@@ -14,6 +14,8 @@ router.post("/", controller.createMovie);
 
 router.put("/:id", controller.updateMovie);
 
+router.put("/:movieId/characters/:characterId",controller.associateCharacter)
+
 router.delete("/:id", controller.deleteMovie);
 
 
