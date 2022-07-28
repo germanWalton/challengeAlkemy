@@ -3,7 +3,7 @@ const logger = require("../log");
 
 const getAllMovies = async (req, res) => {
   try {
-    return res.send(await service.getAll(req.query));
+    return res.status(200).send(await service.getAll(req.query));
   } catch (e) {
     return res.status(500).send({ Error: e.message });
   }

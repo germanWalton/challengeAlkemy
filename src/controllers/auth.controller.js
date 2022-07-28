@@ -1,4 +1,4 @@
-const { generateToken } = require("../middlewares/auth");
+const { generateToken } = require("../middlewares/auth.middleware");
 const nodemailer = require("../notifications/mail");
 const service = require("../services/user.service");
 const logger = require("../log");
@@ -31,12 +31,14 @@ const login = async (req, res) => {
 const register = async (req, res) => {
   const { body } = req;
   try {
-    const newUser = await service.save(body);
-   await nodemailer.send(`<h4>Welcome ${newUser.name} to the Alkemy API Challenge.Thank you for registering</h4>`,newUser.email)
+    if (!(await service.existByEmail(body.email))) {
+      const newUser = await service.save(body);
+      await nodemailer.send(`<h4>Welcome ${newUser.name} to the Alkemy API Challenge.Thank you for registering</h4>`, newUser.email)
 
-    return res.status(201).send({
-      message: "Registered successfully.Now you can go to login",
-    });
+      return res.status(201).send({
+        message: "Registered successfully.Now you can go to login",
+      }); 
+    } else{res.status(500).send({error:'The user email already exist'})}
   } catch (e) {
     res.status(500).send({ error: e.message });
   }

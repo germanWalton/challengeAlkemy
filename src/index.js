@@ -1,3 +1,4 @@
+
 (async () => {
   const express = require("express");
   const compression = require("compression");
@@ -7,7 +8,9 @@
   const server = http.createServer(app);
   const sequelize = require("./config/sequelize");
   const cors = require("cors");
-  
+  const swaggerMiddleware = require("./middlewares/swagger.middleware")
+   swaggerMiddleware(app)
+ 
   
   //middlewares
   const cookieParser = require("cookie-parser");
@@ -16,11 +19,6 @@
   const PORT = config.port;
 
   //routers
-  /*
-  const swaggerRouter = require("./routes/swagger.route");
-  const authRouter = require("./routes/auth.route");
-
-*/
   
   const authRouter = require("./routes/auth.route")
   const moviesRouter = require("./routes/movies.route");
@@ -37,6 +35,18 @@
     logger.info(`Request recived ${req.method} method at ${req.url}`);
     next();
   });
+
+  // configurar CORS
+  // const corsCallback = (req, cb) => {
+  //   const origin = req.header("Origin");
+  //   const allowedHosts = ["http://localhost:3000", "http://localhost:8081"];
+
+  //   if (allowedHosts.includes(origin)) {
+  //     cb(null, { origin: true });
+  //   } else {
+  //     cb(null, { origin: false });
+  //   }
+  // };
 
   //json middlewares -> req.body {}
   app.use(cors());
