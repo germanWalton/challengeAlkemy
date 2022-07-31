@@ -96,3 +96,6 @@ posibles escenarios de error:
 ● Campos faltantes o con un formato inválido en BODY de las peticiones
 ● Acceso a recursos inexistentes en endpoints de detalle
 Los tests pueden realizarse utilizando Mocha + Chai.
+
+## Production
+La api esta subida a Heroku y puede ser testeada a través del siguiente enlace https://disney-alkemy-api.herokuapp.com/docs/

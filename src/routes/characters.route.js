@@ -12,7 +12,7 @@ router.get("/:id", controller.getCharacterById);
 
 router.post("/", controller.createCharacter);
 
-router.patch("/:id", controller.updateCharacter);
+router.put("/:id", controller.updateCharacter);
 
 router.delete("/:id", controller.deleteCharacter);
 

@@ -19,7 +19,7 @@ const update = async (userId, data) => {
 };
 
 const deleteUser = async (userId) => {
-  return await userModel.delete(userId);
+  return await userModel.deleteById(userId);
 };
 
 const existByEmail = async (email) => {

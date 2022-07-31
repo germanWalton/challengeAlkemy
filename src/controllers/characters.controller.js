@@ -40,7 +40,7 @@ const updateCharacter = async (req, res) => {
   const { body } = req;
   try {
     await service.update(id, body);
-    return res.sendStatus(200);
+    return res.sendStatus(201);
   } catch (e) {
     logger.error(e);
     return res.status(500).send({ Error: e.message });
@@ -54,7 +54,7 @@ const deleteCharacter = async (req, res) => {
       return res.status(404).send({Error:"Character not found"})
     }
     await service.deleteCharacter(req.params.id);
-      return res.sendStatus(200)
+      return res.sendStatus(202)
   } catch (e) {
     logger.error(e);
     return res.status(500).send({ Error: e.message });

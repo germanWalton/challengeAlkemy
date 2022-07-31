@@ -21,6 +21,6 @@ const update = async (characterId, data) => {
 };
 
 const deleteCharacter= async (characterId) => {
-  return await characterModel.delete(characterId);
+  return await characterModel.deleteById(characterId);
 };
 module.exports = { getAll, save, getById, update, deleteCharacter };
