@@ -9,17 +9,15 @@ class Gender extends BaseModel {
         name: {
           type: DataTypes.STRING(50),
           allowNull: false,
-          // validate: {
-          //   notEmpty: true,
-          // },
+           validate: {
+             notEmpty: true,
+           },
         },
-        // image: {
-        //   type: DataTypes.STRING(100),
-        //   allowNull: true,
-        //   validate: {
-        //     notEmpty: true,
-        //   },
-        // },
+         image: {
+           type: DataTypes.STRING(100),
+           allowNull: true,
+         
+         },
       }
       
     
@@ -40,6 +38,6 @@ module.exports = gender
 
    gender.model.hasMany(require("./movie.model").model, {
      foreignKey: "genderId",
-     sourceKey: "id"
+     sourceKey: "id",
   
    })

@@ -282,3 +282,21 @@
 [2022-07-28T08:12:58.387] [WARN] warning - The route http://localhost:8081/ doesn't exist
 [2022-07-28T08:13:19.784] [WARN] warning - Request received GET
 [2022-07-28T08:13:19.785] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist
+[2022-07-29T01:19:55.939] [WARN] warning - Request received GET
+[2022-07-29T01:19:55.941] [WARN] warning - The route http://localhost:8081//movies doesn't exist
+[2022-07-29T01:59:19.574] [WARN] warning - Request received GET
+[2022-07-29T01:59:19.575] [WARN] warning - The route http://localhost:8081/auth/login doesn't exist
+[2022-07-29T15:21:35.772] [WARN] warning - Request received GET
+[2022-07-29T15:21:35.773] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-07-29T15:21:51.981] [WARN] warning - Request received GET
+[2022-07-29T15:21:51.982] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist
+[2022-07-30T16:46:07.450] [WARN] warning - Request received GET
+[2022-07-30T16:46:07.452] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-07-30T16:46:22.690] [WARN] warning - Request received GET
+[2022-07-30T16:46:22.691] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist
+[2022-07-30T16:47:29.248] [WARN] warning - Request received GET
+[2022-07-30T16:47:29.250] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-07-30T16:47:29.376] [WARN] warning - Request received GET
+[2022-07-30T16:47:29.379] [WARN] warning - The route http://localhost:8081/favicon.ico doesn't exist
+[2022-07-30T16:47:36.892] [WARN] warning - Request received GET
+[2022-07-30T16:47:36.893] [WARN] warning - The route http://localhost:8081/favicon.ico doesn't exist

@@ -812,13 +812,10 @@
                     "type": "boolean",
                     "default": true
                   },
-                  "role": {
-                    "type": "string",
-                    "default": "USER_ROLE",
-                    "enum": [
-                      "ADMIN_ROLE",
-                      "USER_ROLE"
-                    ]
+                  "isAdmin": {
+                    "type": "boolean",
+                    "default": false
+                    
                   }
                 }
               }
@@ -920,13 +917,10 @@
           "enable": {
             "type": "boolean"
           },
-          "role": {
-            "type": "string",
-            "default": "USER_ROLE",
-            "enum": [
-              "ADMIN_ROLE",
-              "USER_ROLE"
-            ]
+          "isAdmin": {
+            "type": "boolean",
+            "default": false
+           
           }
         },
         "xml": {

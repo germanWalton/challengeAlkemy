@@ -6,25 +6,31 @@ class Movie extends BaseModel {
     const schema = {
       image: {
         type: DataTypes.STRING(250),
-        allowNull: true,
+        allowNull: false,
         validate: {
-          isUrl: true,
-          notEmpty: true,
+          isUrl: { args: true, msg: "The field image must be a url" },
+          notEmpty: { args: true, msg: "The field image could not be empty" },
         },
       },
       title: {
         type: DataTypes.STRING(250),
         allowNull: false,
-        unique: true,
+        unique: {
+          name: "title",
+          msg: "This title exists on the DB, please select another one",
+        },
         validate: {
-          notEmpty: true,
+          notEmpty: { args: true, msg: "The field title could not be empty" },
         },
       },
       creationDate: {
         type: DataTypes.DATE,
         allowNull: false,
         validate: {
-          notEmpty: true,
+          notEmpty: {
+            args: true,
+            msg: "The field creationDate could not be empty",
+          },
         },
       },
       score: {
@@ -32,8 +38,11 @@ class Movie extends BaseModel {
         allowNull: false,
         validate: {
           notEmpty: true,
-          // isInt: true,
-          // is: /^[1-5]+$/,
+          isFloat: true,
+          is: {
+             args: /^[1-5]+$/,
+            msg: "The field score must be a number between 1 and 5",
+          },
         },
       },
     };
@@ -65,16 +74,19 @@ class Movie extends BaseModel {
   }
   async getById(movieId) {
     return await this.model.findByPk(movieId, {
-      include: [{
-        model: require("./character.model").model,
-        as: "characters"
-      },'gender'],
+      include: [
+        {
+          model: require("./character.model").model,
+          as: "characters",
+        },
+        "gender",
+      ],
     });
   }
   async create(obj) {
     const data = await this.model.create(obj, {
-      include: [require("./gender.model").model],
-      as:"gender"
+      // include: [require("./gender.model").model],
+      // as:"gender"
     });
     return data.dataValues;
   }
@@ -91,5 +103,5 @@ movie.model.belongsToMany(require("./character.model").model, {
   movie.model.belongsTo(require("./gender.model").model, {
     foreignKey: "genderId",
     targetKey: "id",
-    as:'gender'
+    as: "gender",
   });

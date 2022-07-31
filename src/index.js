@@ -1,4 +1,6 @@
 
+
+
 (async () => {
   const express = require("express");
   const compression = require("compression");
@@ -68,11 +70,12 @@
   });
 
   try {
-    await sequelize.authenticate();
-    
+     await sequelize.authenticate();
     
       // await sequelize.sync({ alter: true });
-        await sequelize.sync();
+
+     // await sequelize.sync({ alter: true, force:true });
+           await sequelize.sync();
     logger.info("Connection with database been established successfully.");
     server.listen(PORT, () =>
       logger.info(

@@ -10,7 +10,7 @@
     "start": "node .",
     "dev": "nodemon --legacy-watch --ignore './public/*' -r dotenv/config .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:mocha": "mocha --reporter spec > ./tests/unit/report.html './tests/unit/**/*.test.js"
+    "test:mocha": "mocha --reporter spec > ./tests/unit/report.html ./tests/unit/**/*.test.js"
   },
   "repository": {
     "type": "git",
