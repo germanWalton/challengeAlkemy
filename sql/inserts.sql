@@ -13,7 +13,7 @@ INSERT INTO `heroku_0f0c398c8ab9cf8`.`genders` (`name`) VALUES ('ANIME');
 INSERT INTO `heroku_0f0c398c8ab9cf8`.`genders` (`name`) VALUES ('DOCUMENTARY');
 
 # User
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`users` (`password`, `name`, `email`, `role`) VALUES ('123456', 'Germán', 'waltongerman@gmail.com', 'ADMIN_ROLE');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`users` (`password`, `name`, `email`, `isAdmin`) VALUES ('123456', 'Germán', 'waltongerman@gmail.com');
 
 
 # Movies
@@ -33,8 +33,8 @@ INSERT INTO `heroku_0f0c398c8ab9cf8`.`characters` (`image`, `name`, `age`, `weig
 
 
 # Associations
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '4');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '14');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('14', '14');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('24', '54');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('34', '34');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '234');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '244');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('14', '254');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('24', '284');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('34', '264');

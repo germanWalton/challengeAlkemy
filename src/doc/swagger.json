@@ -848,10 +848,7 @@
       "Character": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
+          
           "image": {
             "type": "string"
           },
@@ -877,10 +874,7 @@
       "Movie": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
+          
           "image": {
             "type": "string"
           },
@@ -892,6 +886,9 @@
           },
           "score": {
             "type": "number"
+          },
+          "gender": {
+            "type": "string"
           }
         },
         "xml": {
@@ -901,10 +898,7 @@
       "User": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
+          
           "name": {
             "type": "string"
           },
@@ -930,10 +924,7 @@
       "Gender": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
+          
           "name": {
             "type": "string"
           },

@@ -1,66 +1,40 @@
-
-
-
 (async () => {
   const express = require("express");
   const compression = require("compression");
-  const path = require("path");
   const app = express();
   const http = require("http");
   const server = http.createServer(app);
   const sequelize = require("./config/sequelize");
   const cors = require("cors");
-  const swaggerMiddleware = require("./middlewares/swagger.middleware")
-   swaggerMiddleware(app)
- 
-  
-  //middlewares
+  const swaggerMiddleware = require("./middlewares/swagger.middleware");
+  swaggerMiddleware(app);
+
   const cookieParser = require("cookie-parser");
 
   const config = require("./config");
   const PORT = config.port;
 
-  //routers
-  
-  const authRouter = require("./routes/auth.route")
+
+  const authRouter = require("./routes/auth.route");
   const moviesRouter = require("./routes/movies.route");
   const charactersRouter = require("./routes/characters.route");
-  const userRouter = require("./routes/user.route")
+  const userRouter = require("./routes/user.route");
 
-
-
-  //log4js
   const logger = require("./log/index");
-
 
   app.use((req, res, next) => {
     logger.info(`Request recived ${req.method} method at ${req.url}`);
     next();
   });
 
-  // configurar CORS
-  // const corsCallback = (req, cb) => {
-  //   const origin = req.header("Origin");
-  //   const allowedHosts = ["http://localhost:3000", "http://localhost:8081"];
-
-  //   if (allowedHosts.includes(origin)) {
-  //     cb(null, { origin: true });
-  //   } else {
-  //     cb(null, { origin: false });
-  //   }
-  // };
-
-  //json middlewares -> req.body {}
   app.use(cors());
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
-  app.use(cookieParser("Esto es un secreto")); //req.cookies = {}
+  app.use(cookieParser("Esto es un secreto"));
 
-
- 
-  app.use("/auth",compression(),authRouter)
-  app.use("/users",compression(), userRouter)
-  app.use("/characters",compression(), charactersRouter)
+  app.use("/auth", compression(), authRouter);
+  app.use("/users", compression(), userRouter);
+  app.use("/characters", compression(), charactersRouter);
   app.use("/movies", compression(), moviesRouter);
   //log4js
   app.get("*", (req, res) => {
@@ -70,12 +44,9 @@
   });
 
   try {
-     await sequelize.authenticate();
-    
-      // await sequelize.sync({ alter: true });
+    await sequelize.authenticate();
+    await sequelize.sync({ force:false});
 
-     // await sequelize.sync({ alter: true, force:true });
-           await sequelize.sync();
     logger.info("Connection with database been established successfully.");
     server.listen(PORT, () =>
       logger.info(
