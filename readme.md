@@ -123,8 +123,8 @@ Los tests pueden realizarse utilizando Mocha + Chai.
 ## Instalación
 
 ```
-git clone https://github.com/fedapon/alkemy-nodejs-challenge.git
-cd alkemy-nodejs-challenge
+git clone https://github.com/germanWalton/challengeAlkemy.git
+cd challengeAlkemy
 npm install
 npm run start
 ```
