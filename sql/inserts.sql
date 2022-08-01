@@ -17,12 +17,12 @@ INSERT INTO `heroku_0f0c398c8ab9cf8`.`users` (`password`, `name`, `email`, `isAd
 
 
 # Movies
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/The_Avengers_Poster.png/revision/latest?cb=20150610135853&path-prefix=es', 'Avengers', '2012-03-26', '4.7', '4');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/54/Avengers_Age_Of_Ultron_Poster.png/revision/latest?cb=20191029195118&path-prefix=es', 'Avengers: Age of Ultron', '2015-03-23', '4.5', '4');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/Iron_Man_1_Portada.png/revision/latest?cb=20191029194450&path-prefix=es', 'Iron Man', '2008-03-30', '4.8', '4');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://amc-theatres-res.cloudinary.com/v1608334213/amc-cdn/production/2/movies/300/337/Poster/p_800x1200_AMC_EdwardScissorhands_En_09252020.jpg', 'Edward Scissorhands', '1991-02-14', '4.9', '64');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/2b/The_Avengers_Poster.png/revision/latest?cb=20150610135853&path-prefix=es', 'Avengers', '2012-03-26', '5', '4');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/54/Avengers_Age_Of_Ultron_Poster.png/revision/latest?cb=20191029195118&path-prefix=es', 'Avengers: Age of Ultron', '2015-03-23', '5', '4');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/Iron_Man_1_Portada.png/revision/latest?cb=20191029194450&path-prefix=es', 'Iron Man', '2008-03-30', '5', '4');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://amc-theatres-res.cloudinary.com/v1608334213/amc-cdn/production/2/movies/300/337/Poster/p_800x1200_AMC_EdwardScissorhands_En_09252020.jpg', 'Edward Scissorhands', '1991-02-14', '5', '64');
 INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://pics.filmaffinity.com/Frankenweenie-121243257-large.jpg', 'Frankenweenie', '2012-11-01', '3.9', '74');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6555AA4740B5E88C27563CF0530407639BAE6816D00A341E1E81733A386C79AB/scale?width=506&aspectRatio=2.00&format=jpeg', 'Toy Story', '1996-03-14', '4.5', '4');
+INSERT INTO `heroku_0f0c398c8ab9cf8`.`movies` (`image`, `title`, `creationDate`, `score`, `genderId`) VALUES ('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6555AA4740B5E88C27563CF0530407639BAE6816D00A341E1E81733A386C79AB/scale?width=506&aspectRatio=2.00&format=jpeg', 'Toy Story', '1996-03-14', '5', '4');
 
 
 # Characters
@@ -32,9 +32,3 @@ INSERT INTO `heroku_0f0c398c8ab9cf8`.`characters` (`image`, `name`, `age`, `weig
 INSERT INTO `heroku_0f0c398c8ab9cf8`.`characters` (`image`, `name`, `age`, `weight`, `history`) VALUES ('https://static.wikia.nocookie.net/p__/images/6/61/JD_as_Acissorhamds.jpeg/revision/latest?cb=20160323144628&path-prefix=protagonist', 'Edward', '25', '70', 'La película cuenta la historia de un hombre creado artificialmente llamado Edward, que tiene tijeras en vez de manos. Edward es adoptado por una familia de clase media que vive en un idílico barrio residencial y acaba enamorado de la hija, Kim.');
 
 
-# Associations
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '234');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('4', '244');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('14', '254');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('24', '284');
-INSERT INTO `heroku_0f0c398c8ab9cf8`.`charactersmovies` (`characterId`, `movieId`) VALUES ('34', '264');

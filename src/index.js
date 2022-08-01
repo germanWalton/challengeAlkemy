@@ -1,12 +1,9 @@
 const express = require("express");
 const compression = require("compression");
-const app = express();
 const http = require("http");
-const server = http.createServer(app);
 const sequelize = require("./config/sequelize");
 const cors = require("cors");
 const swaggerMiddleware = require("./middlewares/swagger.middleware");
-swaggerMiddleware(app);
 const cookieParser = require("cookie-parser");
 const config = require("./config");
 const PORT = config.port;
@@ -17,6 +14,12 @@ const userRouter = require("./routes/user.route");
 const logger = require("./log/index");
 
 (async () => {
+
+  const app = express();
+  const server = http.createServer(app);
+  swaggerMiddleware(app);
+
+
   app.use((req, res, next) => {
     logger.info(`Request recived ${req.method} method at ${req.url}`);
     next();
@@ -35,7 +38,7 @@ const logger = require("./log/index");
   app.get("*", (req, res) => {
     logger.warn(`Request received ${req.method}`);
     logger.warn(`The route http://localhost:${PORT}${req.path} doesn't exist`);
-    res.send("not found");
+    res.send("Not found");
   });
 
   try {

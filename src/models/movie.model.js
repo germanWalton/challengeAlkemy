@@ -83,13 +83,7 @@ class Movie extends BaseModel {
       ],
     });
   }
-  async create(obj) {
-    const data = await this.model.create(obj, {
-      // include: [require("./gender.model").model],
-      // as:"gender"
-    });
-    return data.dataValues;
-  }
+
 }
 const movie = new Movie();
 

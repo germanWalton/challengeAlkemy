@@ -16,7 +16,7 @@ const save = async (movie) => {
   const gender = await genderModel.findByName(movie.gender);
   if (gender) {
     movie.genderId = gender.id;
-    return await movieModel.create(movie);
+    return await movieModel.save(movie);
   } else {
     throw new Error("Gender does not exist");
   }

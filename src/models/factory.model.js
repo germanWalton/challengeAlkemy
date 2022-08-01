@@ -15,7 +15,7 @@ class ModelFactory {
       case "gender":
         return genderModel;
       default:
-        throw new Error("Model doesnt exit");
+        throw new Error("Model does not exit");
     }
   }
 }

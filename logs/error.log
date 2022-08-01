@@ -1,4 +1,0 @@
-[2022-07-31T20:45:10.073] [ERROR] error - TypeError: characterModel.delete is not a function
-    at Object.deleteCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\characters.service.js:24:37)
-    at deleteCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\characters.controller.js:56:19)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)

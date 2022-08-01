@@ -24,7 +24,6 @@ const authMiddleware = async (req, res, next) => {
     return res.status(401).send({ error: "Unauthorized" });
   }
 
-  //Authorization: Bearer <token>
 
   const token = header.split(" ")[1];
   const payload = verifyToken(token);
