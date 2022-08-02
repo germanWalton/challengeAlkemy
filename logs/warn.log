@@ -1,2 +1,6 @@
 [2022-07-31T21:18:42.910] [WARN] warning - Request received GET
 [2022-07-31T21:18:42.911] [WARN] warning - The route http://localhost:8081/favicon.ico doesn't exist
+[2022-08-01T22:01:28.911] [WARN] warning - Request received GET
+[2022-08-01T22:01:28.912] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-08-01T22:01:44.252] [WARN] warning - Request received GET
+[2022-08-01T22:01:44.253] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist

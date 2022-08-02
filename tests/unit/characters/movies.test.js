@@ -4,7 +4,7 @@ const config = require("../../../src/config");
 const PORT = config.port;
 const URL = `http://localhost:${PORT}`;
 
-describe("API Characters", async () => {
+describe("API Movies", async () => {
   const agent = supertest(URL);
   let token = null;
   before(async () => {
@@ -16,56 +16,55 @@ describe("API Characters", async () => {
     token = response.token;
   });
 
-  it("should retrieve all characters", async () => {
+  it("should retrieve all movies", async () => {
     const response = await agent
-      .get("/characters")
+      .get("/movies")
       .set("Authorization", `Bearer ${token} `);
     expect(response.status).to.equal(200);
   });
 
-  it("should return a character by id", async () => {
-    const id = 4;
+  it("should return a movie by id", async () => {
+    const id = 234;
     const response = await agent
-      .get(`/characters/${id}`)
+      .get(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `);
     expect(response.body.id).to.equal(id);
   });
 
-  it("should create a character", async () => {
-    const character = {
+  it("should create a movie", async () => {
+    const movie = {
       image:
         "https://static.wikia.nocookie.net/frozen/images/4/4a/Elsa.png/revision/latest?cb=20170824042305&path-prefix=es",
-      name: "Elsa",
-      age: 25,
-      weight: 50,
-      history:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      title: "Escalofrios 5",
+      creationDate: 2013-04-22,
+      score: 5,
+      gender:"Horror",
     };
     const response = await agent
-      .post("/characters")
+      .post("/movies")
       .set("Authorization", `Bearer ${token} `)
-      .send(character);
-    expect(response.body.name).to.equal(character.name);
+      .send(movie);
+    expect(response.body.name).to.equal(movie.name);
   });
-  it("should update a character", async () => {
-    const id = 94;
-    const updateName = { name: "Elsa Frozen" };
+  it("should update a movie", async () => {
+    const id = 324;
+    const updateTitle = { title: "Escalofrios" };
     const response = await agent
-      .put(`/characters/${id}`)
+      .put(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `)
-      .send(updateName);
-    const updatedCharacter = await agent
-      .get(`/characters/${id}`)
+      .send(updateTitle);
+    const updatedMovie = await agent
+      .get(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `);
 
-    expect(response.status).to.equal(201);
-    expect(updatedCharacter.body.name).to.equal(updateName.name);
+    expect(response.status).to.equal(200);
+    expect(updatedMovie.body.name).to.equal(updateTitle.title);
   });
-  it("should delete a character", async () => {
-    const id = 94;
+  it("should delete a  movie", async () => {
+    const id = 314;
     const response = await agent
-      .delete(`/characters/${id}`)
+      .delete(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `);
-    expect(response.status).to.equal(202);
+    expect(response.status).to.equal(200);
   });
 });
