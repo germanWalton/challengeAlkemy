@@ -1,0 +1,72 @@
+[2022-08-03T08:57:21.600] [ERROR] error - ValidationError [SequelizeValidationError]: notNull Violation: Character.name cannot be null
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Character.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\base.model.js:29:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\characters.service.js:16:10)
+    at async createCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\characters.controller.js:30:23) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Character.name cannot be null',
+      type: 'notNull Violation',
+      path: 'name',
+      value: null,
+      origin: 'CORE',
+      instance: [Character],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-08-03T08:59:27.701] [ERROR] error - ValidationError [SequelizeValidationError]: notNull Violation: Character.name cannot be null
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Character.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\base.model.js:29:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\characters.service.js:16:10)
+    at async createCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\characters.controller.js:30:23) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Character.name cannot be null',
+      type: 'notNull Violation',
+      path: 'name',
+      value: null,
+      origin: 'CORE',
+      instance: [Character],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2022-08-03T09:01:14.251] [ERROR] error - ValidationError [SequelizeValidationError]: notNull Violation: Character.name cannot be null
+    at InstanceValidator._validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:2368:7)
+    at async Function.create (C:\Users\walto\OneDrive\Escritorio\disneyApi\node_modules\sequelize\lib\model.js:1344:12)
+    at async Character.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\models\base.model.js:29:18)
+    at async Object.save (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\services\characters.service.js:16:10)
+    at async createCharacter (C:\Users\walto\OneDrive\Escritorio\disneyApi\src\controllers\characters.controller.js:30:23) {
+  errors: [
+    ValidationErrorItem {
+      message: 'Character.name cannot be null',
+      type: 'notNull Violation',
+      path: 'name',
+      value: null,
+      origin: 'CORE',
+      instance: [Character],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}

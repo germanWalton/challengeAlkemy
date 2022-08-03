@@ -3,7 +3,7 @@ const logger = require("../log");
 
 const getUsers = async (req, res) => {
   try {
-    return res.send(await service.getAll());
+    return res.status(200).send(await service.getAll());
   } catch (e) {
     return res.status(500).send({ Error: e.message });
   }
