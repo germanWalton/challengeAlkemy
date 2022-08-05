@@ -1,6 +1,6 @@
-const { DataTypes } = require("sequelize");
-const BaseModel = require("../models/base.model");
-const bcrypt = require("bcrypt");
+const { DataTypes } = require("sequelize")
+const bcrypt = require("bcrypt")
+const BaseModel = require("./base.model")
 
 class User extends BaseModel {
   constructor() {
@@ -14,8 +14,10 @@ class User extends BaseModel {
         allowNull: false,
         validate: {
           notEmpty: { args: true, msg: "The field name could not be empty" },
-          len: { min: 3,msg:"The field name should have at least 3 characters" }
-
+          len: {
+            min: 3,
+            msg: "The field name should have at least 3 characters",
+          },
         },
       },
       email: {
@@ -39,37 +41,39 @@ class User extends BaseModel {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
-    };
-    super("Users", schema);
+    }
+    super("Users", schema)
   }
 
   async create(user) {
-    if (user.password.trim() == "") {
-      throw new Error("The field password cannot be empty");
+    if (user.password.trim() === "") {
+      throw new Error("The field password cannot be empty")
     }
     if (user.password.length <= 5) {
-      throw new Error("The password must have at least 6 characters");
+      throw new Error("The password must have at least 6 characters")
     }
-    user.password = await bcrypt.hash(user.password, 10);
-    const newUser = await this.model.create(user);
-    return newUser.dataValues;
+    user.password = await bcrypt.hash(user.password, 10)
+    const newUser = await this.model.create(user)
+    return newUser.dataValues
   }
 
   async getByEmail(email) {
-    const userByEmail = await this.model.findOne({ where: { email: email } });
-    return userByEmail.dataValues;
+    const userByEmail = await this.model.findOne({ where: { email: email } })
+    return userByEmail.dataValues
   }
+
   async existsByEmail(email) {
-    const existEmail = await this.model.findOne({ where: { email: email } });
+    const existEmail = await this.model.findOne({ where: { email: email } })
     if (existEmail) {
-      return { Error: "Email already exists" };
+      return { Error: "Email already exists" }
     }
   }
+
   async isPasswordValid(email, password) {
-    const user = await this.model.findOne({ where: { email: email } });
-    return await bcrypt.compare(password, user.password);
+    const user = await this.model.findOne({ where: { email: email } })
+    return await bcrypt.compare(password, user.password)
   }
 }
-const user = new User();
+const user = new User()
 
-module.exports = user;
+module.exports = user

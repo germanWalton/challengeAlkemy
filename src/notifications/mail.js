@@ -1,7 +1,8 @@
-const nodemailer = require("nodemailer");
-const config = require('../config/index');
-const logger = require('../log/index')
-const {GMAIL_PWD, GMAIL_ADDRESS} = config.mail
+const nodemailer = require("nodemailer")
+const config = require("../config/index")
+const logger = require("../log/index")
+
+const { GMAIL_PWD, GMAIL_ADDRESS } = config.mail
 
 class MailSender {
   constructor() {
@@ -13,22 +14,21 @@ class MailSender {
         pass: GMAIL_PWD,
       },
       tls: {
-        rejectUnauthorized: false
-    }
-    });
+        rejectUnauthorized: false,
+      },
+    })
   }
 
-  async send(template,email) {
+  async send(template, email) {
     const mailOptions = {
-      from: 'Notifications <no-reply>@challenge-alkemy.com>',
-      subject: 'Welcome to the Alkemy API Challenge ',
+      from: "Notifications <no-reply>@challenge-alkemy.com>",
+      subject: "Welcome to the Alkemy API Challenge",
       to: email,
       html: template,
-    
     }
     const response = await this.transporter.sendMail(mailOptions)
     logger.info(response)
- }
+  }
 }
 
-module.exports = new MailSender();
+module.exports = new MailSender()

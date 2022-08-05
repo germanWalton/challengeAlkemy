@@ -1,23 +1,23 @@
-const userModel = require("./user.model");
-const movieModel = require("./movie.model");
-const characterModel = require("./character.model");
-const genderModel = require("../models/gender.model");
+const userModel = require("./user.model")
+const movieModel = require("./movie.model")
+const characterModel = require("./character.model")
+const genderModel = require("./gender.model")
 
 class ModelFactory {
   static getModel(modelName) {
     switch (modelName) {
       case "user":
-        return userModel;
+        return userModel
       case "movie":
-        return movieModel;
+        return movieModel
       case "character":
-        return characterModel;
+        return characterModel
       case "gender":
-        return genderModel;
+        return genderModel
       default:
-        throw new Error("Model does not exit");
+        throw new Error("Model does not exit")
     }
   }
 }
 
-module.exports = ModelFactory;
+module.exports = ModelFactory

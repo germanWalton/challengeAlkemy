@@ -1,36 +1,31 @@
-const ModelFactory = require('../models/factory.model');
-const userModel = ModelFactory.getModel('user')
+const ModelFactory = require("../models/factory.model")
 
+const userModel = ModelFactory.getModel("user")
 
-const getAll = async () => {
-  return await userModel.getAll();
-};
+const getAll = () => userModel.getAll()
 
-const getById = async (id) => {
-  return await userModel.getById(id);
-};
+const getById = (id) => userModel.getById(id)
 
-const save = async (user) => {
-  return await userModel.create(user);
-};
+const save = (user) => userModel.create(user)
 
-const update = async (userId, data) => {
-  return await userModel.update(userId, data);
-};
+const update = (userId, data) => userModel.update(userId, data)
 
-const deleteUser = async (userId) => {
-  return await userModel.deleteById(userId);
-};
+const deleteUser = (userId) => userModel.deleteById(userId)
 
-const existByEmail = async (email) => {
-  return await userModel.existsByEmail(email)
+const existByEmail = (email) => userModel.existsByEmail(email)
+
+const isPasswordValid = (email, password) =>
+  userModel.isPasswordValid(email, password)
+
+const getUserByEmail = (email) => userModel.getByEmail(email)
+
+module.exports = {
+  getAll,
+  save,
+  getById,
+  update,
+  deleteUser,
+  existByEmail,
+  isPasswordValid,
+  getUserByEmail,
 }
-
-const isPasswordValid = async (email, password) => {
-  return await userModel.isPasswordValid(email,password)
-}
-
-const getUserByEmail = async (email) => {
-  return await userModel.getByEmail(email)
-}
-module.exports = { getAll, save, getById, update, deleteUser,existByEmail,isPasswordValid,getUserByEmail };

@@ -1,34 +1,37 @@
-const sequelize = require("../config/sequelize");
+const sequelize = require("../config/sequelize")
 
 class BaseModel {
   constructor(modelName, schema) {
-    this.model = sequelize.define(modelName, schema);
+    this.model = sequelize.define(modelName, schema)
   }
 
   async getAll() {
-    return await this.model.findAll();
+    const data = await this.model.findAll()
+    return data
   }
 
   async getById(id) {
-    return await this.model.findByPk(id);
+    const data = await this.model.findByPk(id)
+    return data
   }
 
   async deleteById(id) {
-    return await this.model.destroy({ where: { id: id } });
+    await this.model.destroy({ where: { id: id } })
   }
 
   async update(id, data) {
-    return await this.model.update(data, {
+    const updateData = await this.model.update(data, {
       where: {
-        id
-      }
-    });
+        id,
+      },
+    })
+    return updateData
   }
 
   async save(obj) {
-    const data = await this.model.create(obj);
-    return data.dataValues;
+    const data = await this.model.create(obj)
+    return data.dataValues
   }
 }
 
-module.exports = BaseModel;
+module.exports = BaseModel

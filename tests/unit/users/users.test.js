@@ -4,7 +4,7 @@ const config = require("../../../src/config");
 const PORT = config.port;
 const URL = `http://localhost:${PORT}`;
 
-describe("API Users", async () => {
+describe("API Users", async (done) => {
   const agent = supertest(URL);
   let token = null;
   before(async () => {
@@ -34,8 +34,8 @@ describe("API Users", async () => {
   it("should create a user", async () => {
     const user = {
      password:"123456",
-      name: "Alberto",
-      email:"albertomonatna@gmail.com"
+      name: "Landax",
+      email:"landalandax@gmail.com"
     };
     const response = await agent
       .post("/users")
@@ -44,8 +44,8 @@ describe("API Users", async () => {
     expect(response.body.name).to.equal(user.name);
   });
   it("should update a user", async () => {
-    const id = 254;
-    const updateName = { name: "Pepe" };
+    const id = 264;
+    const updateName = { name: "John" };
     const response = await agent
       .put(`/users/${id}`)
       .set("Authorization", `Bearer ${token} `)
@@ -58,10 +58,11 @@ describe("API Users", async () => {
     expect(updatedUser.body.name).to.equal(updateName.name);
   });
   it("should delete a user", async () => {
-    const id = 254;
+    const id = 294;
     const response = await agent
       .delete(`/users/${id}`)
       .set("Authorization", `Bearer ${token} `);
     expect(response.status).to.equal(200);
   });
+  done()
 });

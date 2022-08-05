@@ -1,26 +1,21 @@
-const ModelFactory = require('../models/factory.model');
-const characterModel = ModelFactory.getModel('character');
+const ModelFactory = require("../models/factory.model")
 
+const characterModel = ModelFactory.getModel("character")
 
+const getAll = (query) => characterModel.getAll(query)
 
+const getById = (id) => characterModel.getById(id)
 
-const getAll = async (query) => {
-  return await characterModel.getAll(query)
-};
+const save = (character) => characterModel.save(character)
 
-const getById = async (id) => {
-  return await characterModel.getById(id)
-};
+const update = (characterId, data) => characterModel.update(characterId, data)
 
-const save = async (character) => {
-  return await characterModel.save(character)
-};
+const deleteCharacter = (characterId) => characterModel.deleteById(characterId)
 
-const update = async (characterId, data) => {
-  return await characterModel.update(characterId,data)
-};
-
-const deleteCharacter= async (characterId) => {
-  return await characterModel.deleteById(characterId);
-};
-module.exports = { getAll, save, getById, update, deleteCharacter };
+module.exports = {
+  getAll,
+  save,
+  getById,
+  update,
+  deleteCharacter,
+}

@@ -1,8 +1,9 @@
-const dotenv = require("dotenv");
-const envFound = dotenv.config();
+const dotenv = require("dotenv")
+
+const envFound = dotenv.config()
 
 if (!envFound) {
-  throw new Error("Couldn't found the .env file");
+  throw new Error("Couldn't found the .env file")
 }
 
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
     host: process.env.DATABASE_HOST,
     username: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
-    name:process.env.DATABASE_NAME
+    name: process.env.DATABASE_NAME,
   },
-  jwt: process.env.SECRET
-};
+  jwt: process.env.SECRET,
+}

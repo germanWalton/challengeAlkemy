@@ -4,3 +4,11 @@
 [2022-08-01T22:01:28.912] [WARN] warning - The route http://localhost:8081/ doesn't exist
 [2022-08-01T22:01:44.252] [WARN] warning - Request received GET
 [2022-08-01T22:01:44.253] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist
+[2022-08-04T08:59:59.473] [WARN] warning - Request received GET
+[2022-08-04T08:59:59.474] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-08-04T09:00:16.256] [WARN] warning - Request received GET
+[2022-08-04T09:00:16.257] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist
+[2022-08-05T09:02:14.112] [WARN] warning - Request received GET
+[2022-08-05T09:02:14.113] [WARN] warning - The route http://localhost:8081/ doesn't exist
+[2022-08-05T09:02:29.366] [WARN] warning - Request received GET
+[2022-08-05T09:02:29.367] [WARN] warning - The route http://localhost:8081/HNAP1/ doesn't exist

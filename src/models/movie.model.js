@@ -1,5 +1,5 @@
-const { DataTypes } = require("sequelize");
-const BaseModel = require("../models/base.model");
+const { DataTypes } = require("sequelize")
+const BaseModel = require("./base.model")
 
 class Movie extends BaseModel {
   constructor() {
@@ -40,40 +40,42 @@ class Movie extends BaseModel {
           notEmpty: true,
           isFloat: true,
           is: {
-             args: /^[1-5]+$/,
+            args: /^[1-5]+$/,
             msg: "The field score must be a number between 1 and 5",
           },
         },
       },
-    };
-    super("Movie", schema);
+    }
+    super("Movie", schema)
   }
 
   async getAll(query) {
-    const { title, genderId, order } = query;
-    let queryToFind = {};
-    let titleOrder = [];
+    const { title, genderId, order } = query
+    const queryToFind = {}
+    const titleOrder = []
     if (title) {
-      queryToFind.title = title;
+      queryToFind.title = title
     }
     if (genderId) {
-      queryToFind.genderId = genderId;
+      queryToFind.genderId = genderId
     }
     if (order) {
       if (query.order === "ASC") {
-        titleOrder.push(["creationDate", "ASC"]);
+        titleOrder.push(["creationDate", "ASC"])
       } else {
-        titleOrder.push(["creationDate", "DESC"]);
+        titleOrder.push(["creationDate", "DESC"])
       }
     }
-    return await this.model.findAll({
+    const movies = await this.model.findAll({
       where: queryToFind,
       order: titleOrder,
       attributes: ["title", "image", "creationDate"],
-    });
+    })
+    return movies
   }
+
   async getById(movieId) {
-    return await this.model.findByPk(movieId, {
+    const movie = await this.model.findByPk(movieId, {
       include: [
         {
           model: require("./character.model").model,
@@ -81,21 +83,21 @@ class Movie extends BaseModel {
         },
         "gender",
       ],
-    });
+    })
+    return movie
   }
-
 }
-const movie = new Movie();
+const movie = new Movie()
 
-module.exports = movie;
+module.exports = movie
 
 movie.model.belongsToMany(require("./character.model").model, {
   through: "charactersMovies",
   as: "characters",
   foreignKey: "movieId",
-}),
-  movie.model.belongsTo(require("./gender.model").model, {
-    foreignKey: "genderId",
-    targetKey: "id",
-    as: "gender",
-  });
+})
+movie.model.belongsTo(require("./gender.model").model, {
+  foreignKey: "genderId",
+  targetKey: "id",
+  as: "gender",
+})
