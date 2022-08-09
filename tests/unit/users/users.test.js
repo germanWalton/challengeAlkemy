@@ -34,8 +34,8 @@ describe("API Users", async (done) => {
   it("should create a user", async () => {
     const user = {
      password:"123456",
-      name: "Landax",
-      email:"landalandax@gmail.com"
+      name: "Jeronimo",
+      email:"jeronimo@gmail.com"
     };
     const response = await agent
       .post("/users")
@@ -45,7 +45,7 @@ describe("API Users", async (done) => {
   });
   it("should update a user", async () => {
     const id = 264;
-    const updateName = { name: "John" };
+    const updateName = { name: "Jose" };
     const response = await agent
       .put(`/users/${id}`)
       .set("Authorization", `Bearer ${token} `)
@@ -58,7 +58,7 @@ describe("API Users", async (done) => {
     expect(updatedUser.body.name).to.equal(updateName.name);
   });
   it("should delete a user", async () => {
-    const id = 294;
+    const id = 274;
     const response = await agent
       .delete(`/users/${id}`)
       .set("Authorization", `Bearer ${token} `);

@@ -38,6 +38,10 @@ const updateCharacter = async (req, res) => {
   const { id } = req.params
   const { body } = req
   try {
+    const character = await service.getById(id)
+    if (!character) {
+      return res.status(404).send({ error: "Character not found" })
+    }
     await service.update(id, body)
     return res.sendStatus(201)
   } catch (e) {

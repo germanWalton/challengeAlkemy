@@ -35,7 +35,7 @@ describe("API Movies", async (done) => {
     const movie = {
       image:
         "https://static.wikia.nocookie.net/frozen/images/4/4a/Elsa.png/revision/latest?cb=20170824042305&path-prefix=es",
-      title: "Alice in wonderland",
+      title: "Lion King",
       creationDate: 2013-04-22,
       score: 5,
       gender:"Fantasy",
@@ -47,8 +47,8 @@ describe("API Movies", async (done) => {
     expect(response.body.title).to.equal(movie.title);
   });
   it("should update a movie", async () => {
-    const id = 374;
-    const updateTitle = { title: "GhostBusters" };
+    const id = 394;
+    const updateTitle = { title: "Rey León" };
     const response = await agent
       .put(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `)
@@ -61,7 +61,7 @@ describe("API Movies", async (done) => {
     expect(updatedMovie.body.title).to.equal(updateTitle.title);
   });
   it("should delete a  movie", async () => {
-    const id = 354;
+    const id = 334;
     const response = await agent
       .delete(`/movies/${id}`)
       .set("Authorization", `Bearer ${token} `);
